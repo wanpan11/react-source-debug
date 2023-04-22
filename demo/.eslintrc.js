@@ -51,5 +51,5 @@ module.exports = {
     "react/prop-types": 0,
   },
   // 过滤文件
-  ignorePatterns: ["dist", "node_modules", "pnpm-lock"],
+  ignorePatterns: ["dist", "node_modules", "pnpm-lock", "public"],
 };

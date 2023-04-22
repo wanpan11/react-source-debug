@@ -84,6 +84,10 @@ const baseConfig = {
       "process.env": JSON.stringify(process.env),
     }),
   ],
+  externals: {
+    react: "React",
+    "react-dom": "ReactDOM",
+  },
 };
 
 module.exports = (env, argv) => {
@@ -96,16 +100,7 @@ module.exports = (env, argv) => {
         progress: true,
         overlay: true,
       },
-      // proxy: {
-      //   "/proxy": {
-      //     target: "https://xxxxx.xxxx",
-      //     pathRewrite: { "^/proxy": "" },
-      //     changeOrigin: true, // 控制服务器接收到的请求头中host字段的值
-      //     secure: false,
-      //   },
-      // },
-      open: true,
-      port: 2001,
+      port: 8889,
     };
     baseConfig.devServer = devServer;
     baseConfig.plugins.push(new webpack.SourceMapDevToolPlugin({}));

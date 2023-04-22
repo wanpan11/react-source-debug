@@ -1,13 +1,14 @@
 import { StrictMode } from "react";
-import ReactDOM from "react-dom";
-import "./assets/css/_init.less";
-import App from "./router";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(
+const App = () => {
+  return <div>debugger react</div>;
+};
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(
   <StrictMode>
     <App />
-  </StrictMode>,
-  document.getElementById("root")
+  </StrictMode>
 );
-
-console.log("process.env.APP_NAME ===> ", process.env.APP_NAME);
