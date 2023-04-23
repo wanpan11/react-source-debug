@@ -10,7 +10,9 @@
       "type": "chrome",
       "url": "http://localhost:8889",
       "webRoot": "${workspaceFolder}",
-      "sourceMaps": true
+      "sourceMaps": true,
+      // 如无法调起 chrome 启用该参数
+      // "runtimeExecutable": "C:\/Users\/wanpan\/AppData\/Local\/MyChrome\/Chrome\/Application\/chrome.exe"
     }
   ]
 }
