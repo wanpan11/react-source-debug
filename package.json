@@ -1,0 +1,13 @@
+{
+  "name": "react_source_debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./demo && pnpm start",
+    "build": "cd ./react && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

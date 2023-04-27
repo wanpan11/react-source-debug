@@ -41,12 +41,7 @@ const baseConfig = {
                 corejs: "3",
               },
             ],
-            [
-              "@babel/preset-react",
-              {
-                runtime: "automatic",
-              },
-            ],
+            ["@babel/preset-react"],
           ],
           plugins: ["@babel/plugin-transform-runtime"],
         },
@@ -86,7 +81,7 @@ const baseConfig = {
   ],
   externals: {
     react: "React",
-    "react-dom": "ReactDOM",
+    "react-dom/client": "ReactDOM",
   },
 };
 

@@ -3,6 +3,7 @@
 - 断点在 调试-已载入的脚本 内设置
 - react 18.2.0
 - react 仓库为 submodule
+- 建议使用 node 16
 
 - step 1
 
