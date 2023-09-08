@@ -1,9 +1,6 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-
-const App = () => {
-  return <div>debugger react</div>;
-};
+import App from "./App_2";
 
 const root = createRoot(document.getElementById("root"));
 
