@@ -1,29 +1,38 @@
-import React, { memo, createContext, useContext } from "react";
+import React, { createContext, useContext } from "react";
 
 const TestContext = createContext({ value: 0 });
 
-const Detail = memo(() => {
+const Detail_1 = () => {
   const { value } = useContext(TestContext);
 
   return (
-    <div style={{ marginBottom: "12px" }}>
+    <span style={{ marginBottom: "12px" }}>
       <button>Provider：{value}</button>
-    </div>
+    </span>
   );
-});
-Detail.displayName = "Detail";
+};
+
+const Detail_2 = () => {
+  const { value } = useContext(TestContext);
+
+  return (
+    <span style={{ marginBottom: "12px" }}>
+      <button>Provider：{value}</button>
+    </span>
+  );
+};
 
 const App = () => {
   return (
-    <div>
+    <ul>
       <h1>Provider</h1>
 
       <TestContext.Provider value={{ value: 1 }}>
-        <Detail />
+        <Detail_1 />
       </TestContext.Provider>
 
-      <Detail />
-    </div>
+      <Detail_2 />
+    </ul>
   );
 };
 
