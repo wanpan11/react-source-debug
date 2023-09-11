@@ -1,23 +1,25 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
 
+//  useEffect useLayoutEffect
+
 const App = () => {
   const [data_1, setData_1] = useState(1);
   const [data_2] = useState(2);
 
   useEffect(() => {
-    console.log("useEffect ===> 1");
-  }, []);
-
-  useLayoutEffect(() => {
-    console.log("useLayoutEffect ===> 2");
+    console.log("useEffect");
 
     return () => {
-      console.log("return ===> useLayoutEffect 2");
+      console.log("return ===> useEffect");
     };
   }, []);
 
-  useEffect(() => {
-    console.log("useEffect ===> 3");
+  useLayoutEffect(() => {
+    console.log("useLayoutEffect");
+
+    return () => {
+      console.log("return ===> useLayoutEffect");
+    };
   }, []);
 
   const [data_3] = useState(3);

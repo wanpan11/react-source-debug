@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "cd ./demo && pnpm start",
-    "build": "cd ./react && yarn build"
+    "build": "cd ./react && yarn build",
+    "i-react":"cd ./react && yarn"
   },
   "keywords": [],
   "author": "",
